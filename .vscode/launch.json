@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Class11Collatz",
+            "request": "launch",
+            "mainClass": "Class11Collatz",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class10TablaMultiplicar",
+            "request": "launch",
+            "mainClass": "Class10TablaMultiplicar",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class08CalcularSalario",
+            "request": "launch",
+            "mainClass": "Class08CalcularSalario",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Class07DiaNacimiento",
             "request": "launch",
             "mainClass": "Class07DiaNacimiento",
