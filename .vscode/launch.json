@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Class16Narcisista",
+            "request": "launch",
+            "mainClass": "Class16Narcisista",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class15SumarTextoNumeros",
+            "request": "launch",
+            "mainClass": "Class15SumarTextoNumeros",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class13CalcularDni",
+            "request": "launch",
+            "mainClass": "Class13CalcularDni",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class14ValidarEmail",
+            "request": "launch",
+            "mainClass": "Class14ValidarEmail",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Class11Collatz",
             "request": "launch",
             "mainClass": "Class11Collatz",
