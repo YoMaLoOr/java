@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Class17ValidarIsbn",
+            "request": "launch",
+            "mainClass": "Class17ValidarIsbn",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Class16Narcisista",
             "request": "launch",
             "mainClass": "Class16Narcisista",

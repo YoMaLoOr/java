@@ -10,8 +10,7 @@ public class Class16Narcisista {
 
         for (int i = 0; i < data.length(); i++) {
             double  num = Integer.parseInt(String.valueOf(data.charAt(i)));
-            num = Math.pow(num, (double) data.length());
-            num = (int) num;
+            num = (int) Math.pow(num, (double) data.length());
             acum += num;
         }
         if(acum == Integer.parseInt(data)){
