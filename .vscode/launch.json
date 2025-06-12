@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Class25MetodosPositivoNegativo",
+            "request": "launch",
+            "mainClass": "Class25MetodosPositivoNegativo",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Class17ValidarIsbn",
             "request": "launch",
             "mainClass": "Class17ValidarIsbn",

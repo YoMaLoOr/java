@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Class23ArrayListNumeros {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         ArrayList<Integer> coleccionNumeros = 
             new ArrayList<Integer>();
         int suma = 0;
         int numero = 0;
         while (numero != -1){
             System.out.println("Introduzca un número");
-            String dato = teclado.nextLine();
+            String dato = sc.nextLine();
             numero = Integer.parseInt(dato);
             //PREGUNTAMOS SI EL NUMERO EXISTE EN NUESTRA
             //COLECCION
