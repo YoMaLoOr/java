@@ -1,3 +1,4 @@
+import com.objetos.Cliente;
 import com.objetos.Persona;
 
 public class App {
@@ -22,6 +23,10 @@ public class App {
             System.out.println("Dni del personaje: ");
             personaje.setDni(12345678);
             System.out.println("Letra del dni: " + personaje.getLetrasnif());
+            Cliente cliente = new Cliente(0, "Pedro", "Lopez");
+            Cliente cli2 = new Cliente(0, "Pedro", "Lopez");
+            System.out.println(cliente.getIdCliente());
+            System.out.println(cliente.equals(cli2));
         } catch (Exception e) {
             //NUNCA DEJAREMOS UN CATCH VACIO
             System.out.println("Error: " + e.getMessage());
