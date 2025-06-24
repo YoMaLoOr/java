@@ -26,9 +26,6 @@ public abstract class Figura {
         this.y = y;
     }
     
-    public abstract double area();
-    public abstract double perimetro();
-    
     @Override
     public boolean equals(Object otro){
         if(otro == null) return false;
@@ -45,5 +42,16 @@ public abstract class Figura {
             ", y='" + getY() + "'" +
             "}";
     }
+    public abstract double area();
+    public abstract double perimetro();
 
+    public static Punto centroMasas(Figura... figs){
+        double cmx = 0, cmy =0, masa = 0;
+        for (Figura fig : figs) {
+            cmx += fig.area() * fig.getX();
+            cmy += fig.area() * fig.getY();
+            masa += fig.area();
+        }
+        return new Punto(cmx/masa, cmy/masa);
+    }
 }
