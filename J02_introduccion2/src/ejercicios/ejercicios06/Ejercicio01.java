@@ -3,12 +3,12 @@ package ejercicios.ejercicios06;
 public class Ejercicio01 {
     public static void main(String[] args) {
         int num = 7;
-        System.out.println(Factorial(num));
+        System.out.println(factorial(num));
     }
 
-    public static int Factorial(int num){
+    public static int factorial(int num){
         if(num==0)
             return 1;
-        return num * Factorial(num-1);
+        return num * factorial(num-1);
     }
 }
