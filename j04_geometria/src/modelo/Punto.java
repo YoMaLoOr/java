@@ -1,4 +1,4 @@
-package modelo;
+package src.modelo;
 
 public class Punto implements Dibujable{
     private double centroMasaX;

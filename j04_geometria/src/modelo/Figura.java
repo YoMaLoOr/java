@@ -1,4 +1,4 @@
-package modelo;
+package src.modelo;
 
 
 public abstract class Figura {

@@ -1,6 +1,6 @@
-package tests;
+package src.tests;
 
-import modelo.*;
+import src.modelo.*;
 
 public class Test02 {
     public static void main(String[] args) {

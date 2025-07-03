@@ -1,4 +1,4 @@
-package modelo;
+package src.modelo;
 import java.util.Objects;
 
 public class Rombo extends Figura{

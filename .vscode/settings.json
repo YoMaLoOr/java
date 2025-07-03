@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "j04_geometria",
+        "j03_objetos",
+        "ProjectJDBC",
+        "J01_ejercicios",
+        "ProyectoPOO"
+    ],
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.project.explorer.showNonJavaResources": true
+}

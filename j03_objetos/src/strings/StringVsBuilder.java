@@ -1,4 +1,4 @@
-package strings;
+package src.strings;
 
 public class StringVsBuilder {
     public static void main(String[] args) {

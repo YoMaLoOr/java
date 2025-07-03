@@ -1,4 +1,4 @@
-package modelo;
+package src.modelo;
 
 public class Rectangulo extends Figura{
     private double lado1;

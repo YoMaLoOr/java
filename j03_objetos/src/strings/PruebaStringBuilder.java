@@ -1,4 +1,4 @@
-package strings;
+package src.strings;
 
 public class PruebaStringBuilder {
     public static void main(String[] args) {

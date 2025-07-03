@@ -1,4 +1,4 @@
-package modelo;
+package src.modelo;
 
 public class Circulo extends Figura implements Dibujable{
     private double radio;
