@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test01",
+            "request": "launch",
+            "mainClass": "Test01",
+            "projectName": "java_ca622e61"
+        },
+        {
+            "type": "java",
+            "name": "Test02RecorreLista",
+            "request": "launch",
+            "mainClass": "src.lists.Test02RecorreLista",
+            "projectName": "java_ca622e61"
+        },
+        {
+            "type": "java",
+            "name": "Test01",
+            "request": "launch",
+            "mainClass": "src.lists.Test01",
+            "projectName": "java_ca622e61"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
