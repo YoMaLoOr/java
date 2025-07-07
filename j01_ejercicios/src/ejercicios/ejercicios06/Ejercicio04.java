@@ -1,7 +1,7 @@
 package ejercicios.ejercicios06;
 
-public class Ejercicio03 {
-    public static void main(String[] args) {
+public class Ejercicio04 {
+public static void main(String[] args) {
             int num = 708909;
             System.out.println(cantDigitos(num));
         }
@@ -9,6 +9,6 @@ public class Ejercicio03 {
         public static int cantDigitos(int num){
             if(num==0)
                 return 0;
-            return 1 + cantDigitos(num/10);
+            return num%10 + cantDigitos(num/10);
         }
 }
