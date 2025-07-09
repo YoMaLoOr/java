@@ -1,9 +1,9 @@
-package src.modelo;
+package modelo;
 
 public interface Dibujable {
-    
-    //Por defecto es publico y abstracto
-    void dibujar();
 
-    
+	// por defecto es public abstract
+	void dibujar();
+	
+
 }

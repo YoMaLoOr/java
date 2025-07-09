@@ -1,58 +1,56 @@
-package src.modelo;
+package modelo;
 
-public class Circulo extends Figura implements Dibujable{
-    private double radio;
+public class Circulo extends Figura implements Dibujable {
 
-    public Circulo(double x, double y, double radio) {
-        super(x, y);
-        this.radio = radio;
-    }
-    
+	private double radio;
 
-    public double getRadio() {
-        return this.radio;
-    }
 
-    public void setRadio(double radio) {
-        this.radio = radio;
-    }
-    
-    @Override
-    public boolean equals(Object o){
-        if(super.equals(o) == true){
-            Circulo otro = (Circulo) o;
-            return this.radio == otro.radio;
-        }
-        return false;
-    }
+	public Circulo(double x, double y, double radio) {
+		super(x, y);
+		this.radio = radio;
+	}
 
-    @Override
-    public String toString() {
-        return "[" +
-            " radio='" + getRadio() + "'" +
-            "]";
-    }
 
-    @Override
-    public double area(){
-        double area = Math.PI*Math.pow(this.radio, 2);
-        return area;
-    }
-    
-    @Override
-    public double perimetro(){
-        double perimetro = Math.PI*this.radio*2;
-        return perimetro;
-    }
+	public double getRadio() {
+		return radio;
+	}
 
-    public double diametro(){
-        double diametro = Math.PI*this.radio;
-        return diametro;
-    }
 
-    @Override
-    public void dibujar(){
-        System.out.println("Circulito");
-    }
+	public void setRadio(double radio) {
+		this.radio = radio;
+	}
+	
+	public double getDiametro() {
+		return 2 * radio;
+	}
+	
+	@Override
+	public double area() {
+		return Math.PI * radio * radio;
+	}
+	
+	@Override
+	public double perimetro() {
+		return Math.PI * getDiametro();
+	}
+	
+	@Override
+	public boolean equals(Object otro) {
+		if(!super.equals(otro)) return false;
+		Circulo c = (Circulo) otro;
+		return this.radio == c.radio;
+	}
 
+
+	@Override
+	public String toString() {
+		return "Circulo (" + getX() + ", " + getY() + ", " + radio + ")";
+	}
+
+
+	@Override
+	public void dibujar() {
+		System.out.println("dibujando el circulito");
+	}
+	
 }

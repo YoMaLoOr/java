@@ -1,50 +1,49 @@
-package src.modelo;
+package modelo;
 
-public class Punto implements Dibujable{
-    private double centroMasaX;
-    private double centroMasaY;
+public class Punto implements Dibujable {
+	private double x;
+	private double y;
+	
+	public Punto() {}
 
-    public Punto(double centroMasaX, double centroMasaY) {
-        this.centroMasaX = centroMasaX;
-        this.centroMasaY = centroMasaY;
-    }
+	public Punto(double x, double y) {
+		this.x = x;
+		this.y = y;
+	}
 
-    public double getCentroMasaX() {
-        return this.centroMasaX;
-    }
+	public double getX() {
+		return x;
+	}
 
-    public void setCentroMasaX(double centroMasaX) {
-        this.centroMasaX = centroMasaX;
-    }
+	public void setX(double x) {
+		this.x = x;
+	}
 
-    public double getCentroMasaY() {
-        return this.centroMasaY;
-    }
+	public double getY() {
+		return y;
+	}
 
-    public void setCentroMasaY(double centroMasaY) {
-        this.centroMasaY = centroMasaY;
-    }
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	public boolean equals(Object otro) {
+		if (otro == null) return false;
+		if (this == otro) return true;
+		if (this.getClass() != otro.getClass()) return false;
+		Punto otra = (Punto) otro;
+		return this.x == otra.x && this.y == otra.y;
+	}
 
-    @Override
-    public String toString() {
-        return "{" +
-            " centroMasaX='" + getCentroMasaX() + "'" +
-            ", centroMasaY='" + getCentroMasaY() + "'" +
-            "}";
-    }
+	@Override
+	public String toString() {
+		return "Punto (" + x + ", " + y + ")";
+	}
 
-    @Override
-    public boolean equals(Object otro){
-        if(otro == null) return false;
-        if(this == otro) return true;
-        if(this.getClass() != otro.getClass()) return false;
-        Punto otra = (Punto) otro;
-        return this.centroMasaX == otra.centroMasaX && this.centroMasaY == otra.centroMasaY;
-    }
+	@Override
+	public void dibujar() {
+		System.out.println("puntito");
+	}
 
-    @Override
-    public void dibujar() {
-        System.out.println("Puntito");
-    }
-
+	
 }
