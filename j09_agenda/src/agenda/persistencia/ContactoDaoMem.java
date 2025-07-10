@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Set;
 
 import agenda.modelo.Contacto;
+import agenda.util.Contactos;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -16,6 +17,13 @@ public class ContactoDaoMem  implements ContactoDao {
     public ContactoDaoMem() {
         almacen = new HashMap<Integer, Contacto>();
         proximoId = 1;
+        cargaInicial();
+    }
+
+    private void cargaInicial(){
+        for(Contacto c : Contactos.generaContactos()) {
+            insertar(c);
+        }
     }
 
     @Override
@@ -46,9 +54,10 @@ public class ContactoDaoMem  implements ContactoDao {
 
     @Override
     public Set<Contacto> buscar(String cadena) {
+        cadena = cadena.toLowerCase();
         Set<Contacto> resu = new HashSet<>();
         for(Contacto contacto : almacen.values()){
-            if(contacto.getApellidos().contains(cadena) || contacto.getApodo().contains(cadena) || contacto.getNombre().contains(cadena))
+            if(contacto.getApellidos().toLowerCase().contains(cadena) || contacto.getApodo().toLowerCase().contains(cadena) || contacto.getNombre().toLowerCase().contains(cadena))
                 resu.add(contacto);
         }
         return resu;
