@@ -4,20 +4,27 @@ import java.sql.SQLException;
 
 public class E03 {
     public static void main(String[] args) {
-        
+        try {
+            metodo(-5);
+        } catch (SQLException e) {
+            System.out.println("Esto arregla el problema.");
+        }
+        System.err.println("Continua el programa.");
+
+        otrometodo(66);
     }
 
-    public static void otrometodo(){
+    public static void otrometodo(int num){
         try {
-            problematico(44);
+            problematico(num);
         } catch (SQLException e) {
             // Esto es el arreglo al problema
             e.printStackTrace();
         }
     }
 
-    public static void metodo() throws SQLException {
-        problematico(78);
+    public static void metodo(int num) throws SQLException {
+        problematico(num);
         System.out.println("Todo feten.");
     }
 

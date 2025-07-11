@@ -1,0 +1,24 @@
+package io;
+
+public class LecturaTecladoException extends RuntimeException {
+
+    public LecturaTecladoException() {
+    }
+
+    public LecturaTecladoException(String message) {
+        super(message);
+    }
+
+    public LecturaTecladoException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public LecturaTecladoException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
+
+    public LecturaTecladoException(Throwable cause) {
+        super(cause);
+    }
+    
+}

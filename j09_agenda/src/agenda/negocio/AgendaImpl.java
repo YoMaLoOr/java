@@ -2,7 +2,7 @@ package agenda.negocio;
 
 import agenda.modelo.Contacto;
 import agenda.persistencia.ContactoDao;
-import agenda.persistencia.ContactoDaoMem;
+import agenda.persistencia.ContactoDaoMemSerial;
 import java.io.IOException;
 import java.text.Collator;
 import java.util.Comparator;
@@ -15,7 +15,8 @@ public class AgendaImpl implements Agenda {
     private ContactoDao cDao;
 
     public AgendaImpl(){
-        cDao = new ContactoDaoMem();
+        //cDao = new ContactoDaoMem();
+        cDao = new ContactoDaoMemSerial();
     }
 
     @Override
