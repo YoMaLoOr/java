@@ -21,7 +21,61 @@ public class ContactoDaoJDBC implements ContactoDao {
 
     @Override
     public void insertar(Contacto c) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        String sql = "insert into contactos (`nombre`, `apellidos`, `apodo`, `tipo_via`, `via`, `numero`, `piso`, `puerta`, `codigo_postal`, `ciudad`, `provincia`) " + 
+                    "values (?,?,?,?,?,?,?,?,?,?,?)";
+        try(Connection con = ds.getConnection()){
+            con.setAutoCommit(false);
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, c.getNombre());
+            ps.setString(2, c.getApellidos());
+            ps.setString(3, c.getApodo());
+            ps.setString(4, c.getDom().getTipoVia());
+            ps.setString(5, c.getDom().getVia());
+            ps.setInt(6, c.getDom().getNumero());
+            ps.setInt(7, c.getDom().getPiso());
+            ps.setString(8, c.getDom().getPuerta());
+            ps.setString(9, c.getDom().getCodigoPostal());
+            ps.setString(10, c.getDom().getCiudad());
+            ps.setString(11, c.getDom().getProvincia());
+
+            int filas = ps.executeUpdate();
+            if(filas == 1){
+                PreparedStatement psId = con.prepareStatement("select LAST_INSERT_ID()"); // Esta es una funcion propia de MySQL, no funciona fuera del mismo.
+                ResultSet rsId = psId.executeQuery();
+                rsId.next();
+                int id = rsId.getInt(1);
+
+                sql = "insert into telefonos (fk_contacto, telefono) values (?,?)";
+                PreparedStatement psTel = con.prepareStatement(sql);
+                int cantTel = 0;
+                for(String tel : c.getTelefonos()){
+                    psTel.setInt(1, id);
+                    psTel.setString(2, tel);
+                    cantTel += psTel.executeUpdate();
+                }
+
+                sql = "insert into correos (fk_contacto, correo) values (?,?)";
+                PreparedStatement psCorreos = con.prepareStatement(sql);
+                int cantCorreo = 0;
+                for(String correo : c.getCorreos()){
+                    psCorreos.setInt(1, id);
+                    psCorreos.setString(2, correo);
+                    cantCorreo += psTel.executeUpdate();
+                }
+
+                if(cantTel == c.getTelefonos().size() && cantCorreo == c.getCorreos().size()){
+                    con.commit();
+                } else {
+                    con.rollback();
+                    throw new RuntimeException("No son correctas las cantidades.");
+                }
+            } else {
+                con.rollback();
+                throw new RuntimeException("Ninguna fila se vio afectada. no por culpa de SQL.");
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -74,6 +128,24 @@ public class ContactoDaoJDBC implements ContactoDao {
                 dom.setCiudad(rs.getString("ciudad"));
                 dom.setProvincia(rs.getString("provincia"));
                 // Faltan telefonos y correos
+                // Statement st = con.createStatement();
+                // st.executeQuery("select telefono from telefonos where fk_contacto = " + c.getIdContacto());
+                PreparedStatement psTelefonos = con.prepareStatement("select telefono from telefonos where fk_contacto = ?");
+                psTelefonos.setInt(1, c.getIdContacto());
+                ResultSet rsTelefonos = psTelefonos.executeQuery();
+                while (rsTelefonos.next()) {
+                    c.addTelefonos(rsTelefonos.getString("telefono"));
+                    
+                }
+
+                PreparedStatement psCorreos = con.prepareStatement("select correo from correos where fk_contacto = ?");
+                psCorreos.setInt(1, c.getIdContacto());
+                ResultSet rsCorreos = psCorreos.executeQuery();
+                while (rsCorreos.next()) {
+                    c.addCorreos(rsCorreos.getString("correo"));
+                    
+                }
+
                 c.setDom(dom);
 
                 resul.add(c);
