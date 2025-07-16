@@ -4,5 +4,6 @@
     "java.dependency.packagePresentation": "hierarchical",
     "java.dependency.syncWithFolderExplorer": true,
     "java.project.explorer.showNonJavaResources": true,
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
