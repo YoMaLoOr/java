@@ -34,9 +34,10 @@ public class Consulta01 {
 
         List<Object[]> lista = em.createQuery(jpql, Object[].class). getResultList();
 
-        for (Object[] elem : lista) {
-            System.out.println(elem[0] + ": " + elem[1]);
-        }
+        // for (Object[] elem : lista) {
+        //     System.out.println(elem[0] + ": " + elem[1]);
+        // }
 
+        lista.forEach(c -> {System.out.println(c[0] + " : " + c[1]);});
     }
 }
