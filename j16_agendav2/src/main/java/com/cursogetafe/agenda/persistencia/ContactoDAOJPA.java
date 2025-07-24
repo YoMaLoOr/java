@@ -31,7 +31,7 @@ public class ContactoDAOJPA implements ContactoDao{
             e.printStackTrace();
             em.getTransaction().rollback();
         }
-        
+        em.close();
     }
 
     @Override
@@ -46,62 +46,64 @@ public class ContactoDAOJPA implements ContactoDao{
             e.printStackTrace();
             em.getTransaction().rollback();
         }
+        em.close();
     }
 
     @Override
     public boolean eliminar(int idContacto) {
         em = emf.createEntityManager();
-        jpql = "select c from Contacto c where c.idcontactos = ?1";
+        // Contacto eliminar = em.find(Contacto.class, idContacto);
+        jpql = "select c from Contacto c where c.idContacto = ?1";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
         q.setParameter(1, idContacto);
         Contacto c = q.getSingleResult();
-        boolean resul;
-        try {
-            em.getTransaction().begin();
-            em.remove(c);
-            em.getTransaction().commit();
-            resul = true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            em.getTransaction().rollback();
-            resul = false;
-        }
-        return resul;
+        if (c != null) {
+            try {
+                em.getTransaction().begin();
+                em.remove(c); //Para que funcione el eliminar, debe primero estar en estado new, por lo que no se le puede pasar simplemente el objeto, debes trabajarlo antes.
+                em.getTransaction().commit();
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                em.getTransaction().rollback();
+                return false;
+            } finally {
+                em.close();
+            }
+        } else 
+        return false;
     }
-
+    
     @Override
     public boolean eliminar(Contacto c) {
-        boolean resul;
-        try {
-            em.getTransaction().begin();
-            em.remove(c);
-            em.getTransaction().commit();
-            resul = true;
-        } catch (Exception e) {
-            e.printStackTrace();
-            em.getTransaction().rollback();
-            resul = false;
-        }
-        return resul;
+        return eliminar(c.getIdContacto());
     }
-
+    
     @Override
     public Contacto buscar(int idContacto) {
         em = emf.createEntityManager();
-        jpql = "select c from Contacto c where c.idcontactos = ?1";
+        // Contacto buscado = em.find(Contacto.class, idContacto);
+        //if(buscado != null){
+        //  buscado.getTelefonos().size();
+        //  buscado.getCorreos().size();
+        //}
+        jpql = "select c from Contacto c left join fetch c.telefonos left join fetch c.correos where c.idContacto = ?1";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
         q.setParameter(1, idContacto);
-        return q.getSingleResult();
+        Contacto c = q.getSingleResultOrNull();
+        em.close();
+        return c;
     }
 
     @Override
     public Set<Contacto> buscar(String cadena) {
         em = emf.createEntityManager();
         Set<Contacto> resul = new HashSet<>();
-        jpql = "select c from Contacto c where c.nombre like :nom";
+        jpql = "select c from Contacto c join fetch c.telefonos left join fetch c.correos where c.nombre like :nom or c.apellidos like :nom or c.apodo like :nom";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
-        q.setParameter("nom", cadena);
+        q.setParameter("nom", "%" + cadena + "%");
         resul.addAll(q.getResultList());
+        em.close();
         return resul;
     }
 
@@ -112,6 +114,7 @@ public class ContactoDAOJPA implements ContactoDao{
         jpql = "select c from Contacto c";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
         resul.addAll(q.getResultList());
+        em.close();
         return resul;
     }
 

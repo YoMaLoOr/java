@@ -9,8 +9,6 @@ import java.util.Set;
 
 import javax.sql.DataSource;
 
-import org.apache.commons.dbcp.BasicDataSource;
-
 import com.cursogetafe.agenda.config.Config;
 import com.cursogetafe.agenda.modelo.Contacto;
 import com.cursogetafe.agenda.modelo.Domicilio;

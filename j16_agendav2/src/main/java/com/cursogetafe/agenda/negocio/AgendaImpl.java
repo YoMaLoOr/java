@@ -7,8 +7,8 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.cursogetafe.agenda.config.BeanFactory;
 import com.cursogetafe.agenda.modelo.Contacto;
-import com.cursogetafe.agenda.persistencia.ContactoDAOJPA;
 import com.cursogetafe.agenda.persistencia.ContactoDao;
 
 public class AgendaImpl implements Agenda {
@@ -16,9 +16,7 @@ public class AgendaImpl implements Agenda {
     private ContactoDao cDao;
 
     public AgendaImpl(){
-        //cDao = new ContactoDaoMem();
-        //cDao = new ContactoDaoMemSerial();
-        cDao = new ContactoDAOJPA();
+        cDao = BeanFactory.getContactoDao();
     }
 
     @Override

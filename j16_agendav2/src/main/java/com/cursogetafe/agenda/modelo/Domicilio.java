@@ -2,18 +2,15 @@ package com.cursogetafe.agenda.modelo;
 import java.io.Serializable;
 import java.util.Objects;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Domicilio implements Serializable{
-	@Column(name="tipo_via")
 	private String tipoVia;
 	private String via;
 	private int numero;
 	private int piso;
 	private String puerta;
-	@Column(name="codigo_postal")
 	private String codigoPostal;
 	private String ciudad;
 	private String provincia;
