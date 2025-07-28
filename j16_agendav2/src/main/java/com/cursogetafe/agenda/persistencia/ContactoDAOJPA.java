@@ -16,6 +16,10 @@ public class ContactoDAOJPA implements ContactoDao{
     private EntityManager em; 
     private String jpql;
 
+    public ContactoDAOJPA(EntityManagerFactory emf) {
+        this.emf = emf;
+    }
+
     public ContactoDAOJPA(){
         emf = Config.getEmf();
     }
@@ -56,7 +60,7 @@ public class ContactoDAOJPA implements ContactoDao{
         jpql = "select c from Contacto c where c.idContacto = ?1";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
         q.setParameter(1, idContacto);
-        Contacto c = q.getSingleResult();
+        Contacto c = q.getSingleResultOrNull();
         if (c != null) {
             try {
                 em.getTransaction().begin();
@@ -71,7 +75,7 @@ public class ContactoDAOJPA implements ContactoDao{
                 em.close();
             }
         } else 
-        return false;
+            return false;
     }
     
     @Override
@@ -99,7 +103,7 @@ public class ContactoDAOJPA implements ContactoDao{
     public Set<Contacto> buscar(String cadena) {
         em = emf.createEntityManager();
         Set<Contacto> resul = new HashSet<>();
-        jpql = "select c from Contacto c join fetch c.telefonos left join fetch c.correos where c.nombre like :nom or c.apellidos like :nom or c.apodo like :nom";
+        jpql = "select c from Contacto c left join fetch c.telefonos left join fetch c.correos where c.nombre like :nom or c.apellidos like :nom or c.apodo like :nom";
         TypedQuery<Contacto> q = em.createQuery(jpql, Contacto.class);
         q.setParameter("nom", "%" + cadena + "%");
         resul.addAll(q.getResultList());

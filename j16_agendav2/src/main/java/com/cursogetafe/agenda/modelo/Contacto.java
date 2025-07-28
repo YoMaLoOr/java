@@ -59,6 +59,11 @@ public class Contacto implements Comparable<Contacto>, Cloneable, Serializable {
 		this.dom = dom;
 	}
 
+    public Contacto(int i) {
+        this();
+		this.idContacto = idContacto;
+    }
+
 	public int getIdContacto() {
 		return idContacto;
 	}
