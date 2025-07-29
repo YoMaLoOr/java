@@ -21,5 +21,11 @@ public class Ventana extends JFrame{
 
     public static void main(String[] args) {
         new Ventana();
+        int cont = 0;
+
+        while (true) { 
+            for (int i = 0; i < 100_000; i++);
+            System.out.println(cont++);
+        }
     }
 }
