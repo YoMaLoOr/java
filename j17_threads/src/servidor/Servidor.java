@@ -1,4 +1,4 @@
-package threads.servidor;
+package servidor;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -55,10 +55,12 @@ public class Servidor {
                 out.println("Bienvenido al servidor MUTONTO");
                 out.println("Por favor identificate");
                 user = in.readLine();
+                user = user.replaceAll(" ", "_");
                 while ((sala.containsKey(user)) || user.length() == 0) { 
                     out.println("SRV: " + "El usuario es incorrecto o ya existe");
                     out.println("SRV: " + "Ingresa tu usuario.");
                     user=in.readLine();
+                    user = user.replaceAll(" ", "_");
                 }
                 out.println("SRV: " + user + " ya estas en la sala.");
                 help();
@@ -68,7 +70,8 @@ public class Servidor {
                 log("SRV: " + "Hay " + cant + " usuarios en la sala");
                 difusion("SRV: " + user + " se ha conectado");
                 String linea;
-                while ((linea = in.readLine()) != null) { 
+                boolean sesion = true;
+                while (sesion && (linea = in.readLine()) != null) { 
                     if (linea.length() > 0 && linea.charAt(0) == '@') {
                         if (linea.contains(" ")) {
                             String usrDestino = linea.substring(1, linea.indexOf(" "));
@@ -90,6 +93,14 @@ public class Servidor {
                                 break;
                             case "-h" : 
                                 help();
+                                break;
+                            case "-q" : 
+                                out.println("SRV: Pasta La vista.");
+                                sala.remove(user);
+                                cant--;
+                                difusion("SRV: " + user + " ha abandonado la sala");
+                                log(user + " se ha desconectado");
+                                sesion = false;
                                 break;
                             default: 
                                 difusion(user + ": " + linea);
