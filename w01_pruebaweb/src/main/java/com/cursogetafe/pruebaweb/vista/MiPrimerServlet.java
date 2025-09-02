@@ -25,7 +25,6 @@ public class MiPrimerServlet extends HttpServlet{
 
         PrintWriter out = new PrintWriter(resp.getWriter());
         out.println(respuesta);
-        super.doGet(req, resp);
     }
 
     @Override

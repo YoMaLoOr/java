@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d3ba465-fd96-4c17-baea-97a8281463b7" name="Changes" comment="">
+    <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/encodings.xml" afterDir="false" />
@@ -18,19 +18,19 @@
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/WEB-INF/prueba.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/ventas/facturacion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/test/Prueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/test/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/src/main/java/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/src/main/java/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/target/classes/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/target/classes/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.class" afterDir="false" />
@@ -41,34 +41,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="30GyrxwmPpSFY0IeBiYwu3pn0yg" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="328gsdmvA63pYPtxenl8P1YA4hM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mananas/Documents/GitHub/java/j14_ejerciciojpa&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Prueba.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mananas/Documents/GitHub/java/w03_tienda/src/main/resources/WEB-INF",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\w03_tienda\src\main\resources\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cursogetafe.tienda.config" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3d3ba465-fd96-4c17-baea-97a8281463b7" name="Changes" comment="" />
-      <created>1753268406249</created>
+      <changelist id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="" />
+      <created>1756807823713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1753268406249</updated>
+      <updated>1756807823713</updated>
     </task>
     <servers />
   </component>
