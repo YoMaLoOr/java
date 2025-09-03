@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/excepciones/PersistenciaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/FabricanteDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/FabricanteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/ProductoDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/ProductoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursogetafe/tienda/modelo/TestMapeo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Fabricantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Fabricante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/test/Prueba.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
