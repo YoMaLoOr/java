@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "productos")
-public class Productos implements Serializable {
+public class Producto implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,12 +16,12 @@ public class Productos implements Serializable {
     private double precio;
     @ManyToOne
     @JoinColumn(name = "fk_fabricante")
-    private Fabricantes fabricante;
+    private Fabricante fabricante;
 
-    public Productos() {
+    public Producto() {
     }
 
-    public Productos(int idProducto, String producto, double precio, Fabricantes fabricante) {
+    public Producto(int idProducto, String producto, double precio, Fabricante fabricante) {
         this.idProducto = idProducto;
         this.producto = producto;
         this.precio = precio;
@@ -52,17 +52,17 @@ public class Productos implements Serializable {
         this.precio = precio;
     }
 
-    public Fabricantes getFabricante() {
+    public Fabricante getFabricante() {
         return fabricante;
     }
 
-    public void setFabricante(Fabricantes fabricante) {
+    public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
     }
 
     @Override
     public String toString() {
-        return "Productos{" +
+        return "Producto{" +
                 "idProducto=" + idProducto +
                 ", producto='" + producto + '\'' +
                 ", precio=" + precio +

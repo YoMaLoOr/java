@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "fabricantes")
-public class Fabricantes implements Serializable {
+public class Fabricante implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,12 +15,12 @@ public class Fabricantes implements Serializable {
     private int idFabricante;
     private String fabricante;
     @OneToMany(mappedBy = "fabricante")
-    private Set<Productos> productos;
+    private Set<Producto> productos;
 
-    public Fabricantes() {
+    public Fabricante() {
     }
 
-    public Fabricantes(int idFabricante, String fabricante) {
+    public Fabricante(int idFabricante, String fabricante) {
         this.idFabricante = idFabricante;
         this.fabricante = fabricante;
     }
@@ -41,17 +41,17 @@ public class Fabricantes implements Serializable {
         this.fabricante = fabricante;
     }
 
-    public Set<Productos> getProductos() {
+    public Set<Producto> getProductos() {
         return productos;
     }
 
-    public void setProductos(Set<Productos> productos) {
+    public void setProductos(Set<Producto> productos) {
         this.productos = productos;
     }
 
     @Override
     public String toString() {
-        return "Fabricantes{" +
+        return "Fabricante{" +
                 "idFabricante=" + idFabricante +
                 ", fabricante='" + fabricante + '\'' +
                 ", productos=" + productos +

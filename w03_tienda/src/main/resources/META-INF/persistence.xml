@@ -8,8 +8,8 @@
     <persistence-unit name="tienda" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <class>com.cursogetafe.tienda.modelo.Fabricantes</class>
-        <class>com.cursogetafe.tienda.modelo.Productos</class>
+        <class>com.cursogetafe.tienda.modelo.Fabricante</class>
+        <class>com.cursogetafe.tienda.modelo.Producto</class>
 
         <properties>
             <!-- JDBC -->
@@ -20,7 +20,7 @@
 
             <!-- Hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="true"/>
         </properties>
     </persistence-unit>

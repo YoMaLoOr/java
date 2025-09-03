@@ -5,36 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d3ba465-fd96-4c17-baea-97a8281463b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/java/view/Saludo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/Calculadora.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/WEB-INF/prueba.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w02_otraprueba/src/main/webapp/ventas/facturacion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/test/Prueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/src/main/java/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/src/main/java/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/target/classes/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../w01_pruebaweb/target/classes/com/cursogetafe/pruebaweb/vista/MiPrimerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../w01_pruebaweb/target/w01_pruebaweb.war" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/persistencia/FabricanteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/persistencia/ProductoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../w03_tienda/src/test/java/com/cursogetafe/tienda/modelo/TestMapeo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Fabricantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Fabricante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/test/Prueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
