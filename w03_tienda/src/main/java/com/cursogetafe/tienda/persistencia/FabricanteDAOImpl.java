@@ -1,5 +1,6 @@
 package com.cursogetafe.tienda.persistencia;
 
+import com.cursogetafe.tienda.config.Config;
 import com.cursogetafe.tienda.modelo.Fabricante;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -14,13 +15,14 @@ public class FabricanteDAOImpl implements FabricanteDao{
     private String jpql;
 
     public FabricanteDAOImpl(EntityManagerFactory emf) {this.emf = emf;}
+    public FabricanteDAOImpl() {emf = Config.getEmf();}
 
     @Override
     public void save(Fabricante fabricante) {
         EntityManager em = emf.createEntityManager();
         try (em){
             em.getTransaction().begin();
-            em.persist(fabricante);
+            em.merge(fabricante);
             em.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -54,13 +56,20 @@ public class FabricanteDAOImpl implements FabricanteDao{
     public Set<Fabricante> findOnlyActive() {
         EntityManager em = emf.createEntityManager();
         Set<Fabricante> resul = new HashSet<>();
-
-        return Set.of();
+        jpql = "select f from Fabricante f join f.productos p";
+        TypedQuery<Fabricante> q = em.createQuery(jpql, Fabricante.class);
+        resul.addAll(q.getResultList());
+        em.close();
+        return resul ;
     }
 
     @Override
     public Set<Fabricante> findAll() {
         EntityManager em = emf.createEntityManager();
-        return Set.of();
+        jpql = "select f from Fabricante f";
+        TypedQuery<Fabricante> q = em.createQuery(jpql, Fabricante.class);
+        Set<Fabricante> resul = new HashSet<>(q.getResultList());
+        em.close();
+        return resul;
     }
 }
