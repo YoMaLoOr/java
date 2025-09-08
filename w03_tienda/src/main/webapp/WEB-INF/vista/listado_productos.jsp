@@ -19,34 +19,26 @@
 			<input type="search" name="descripcion">
 			<button type="submit">Buscar</button>
 		</form>
-
-		<table id="tabla_datos">
-			<thead>
-				<tr>
-					<th>Descripcion</th>
-					<th>Precio</th>
-					<th>Fabricante</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Ordenador portatil DK</td>
-					<td>1.589</td>
-					<td>Asus</td>
-				</tr>
-				<tr>
-					<td>Ordenador portatil DK</td>
-					<td>1.589</td>
-					<td>Asus</td>
-				</tr>
-				<tr>
-					<td>Ordenador portatil DK</td>
-					<td>1.589</td>
-					<td>Asus</td>
-				</tr>
-			</tbody>
-		</table>
-
+		<c:if test="${not empty prods}">
+			<table id="tabla_datos">
+				<thead>
+					<tr>
+						<th>Descripcion</th>
+						<th>Precio</th>
+						<th>Fabricante</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach var="prod" items="${prods}">
+						<tr>
+							<td>${prod.producto}</td>
+							<td>${prod.precio}</td>
+							<td>${prod.fabricante.fabricante}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+		</c:if>
 		<a href="${home}/menu_principal"><button>Volver</button></a>
 	</div>
 </body>
