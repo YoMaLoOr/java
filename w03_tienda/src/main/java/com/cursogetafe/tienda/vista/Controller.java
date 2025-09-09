@@ -3,6 +3,7 @@ package com.cursogetafe.tienda.vista;
 import java.io.IOException;
 import java.util.Set;
 
+import com.cursogetafe.tienda.modelo.Fabricante;
 import com.cursogetafe.tienda.modelo.Producto;
 import com.cursogetafe.tienda.negocio.Tienda;
 import com.cursogetafe.tienda.negocio.TiendaImpl;
@@ -30,7 +31,11 @@ public class Controller extends HttpServlet {
             }
 		case "/menu_principal" -> req.getRequestDispatcher("/WEB-INF/vista/menu_principal.jsp").forward(req, resp);
         case "/listado_productos" -> req.getRequestDispatcher("/WEB-INF/vista/listado_productos.jsp").forward(req, resp);
-        case "/alta_producto" -> req.getRequestDispatcher("/WEB-INF/vista/alta_producto.jsp").forward(req, resp);
+        case "/alta_producto" -> {
+            Set<Fabricante> fabs = neg.getFabricantes();
+            req.setAttribute("fabs", fabs);
+            req.getRequestDispatcher("/WEB-INF/vista/alta_producto.jsp").forward(req, resp);
+        }
 		}
 	}
 
@@ -55,9 +60,25 @@ public class Controller extends HttpServlet {
                 descripcion = req.getParameter("descripcion");
                 String precioStr = req.getParameter("precio");
                 String idFabStr = req.getParameter("idFabricante");
-                System.out.println(descripcion);
-                System.out.println(precioStr);
-                System.out.println(idFabStr);
+                double precio;
+                Fabricante fab;
+                if (!isEmpty(descripcion)
+                    && !isEmpty(precioStr)
+                    && !isEmpty(idFabStr)
+                    && isDouble(precioStr)
+                    && isInt(idFabStr)
+                    && (precio = Double.parseDouble(precioStr)) > 0
+                    && (fab = neg.getFabricante(Integer.parseInt(idFabStr))) != null){
+                    req.setAttribute("producto", descripcion);
+                    try {
+                        neg.crearProducto(new Producto(descripcion, precio, fab));
+                        req.getRequestDispatcher("/WEB-INF/vista/alta_producto_ok.jsp").forward(req, resp);
+                    } catch (Exception e) {
+                        req.getRequestDispatcher("/WEB-INF/vista/alta_producto_error.jsp").forward(req, resp);
+                    }
+                } else {
+                    //Cerrar sesion
+                }
             }
         }
     }
@@ -71,4 +92,31 @@ public class Controller extends HttpServlet {
 		app.setAttribute("home", app.getContextPath() + "/tienda");
 		app.setAttribute("css", app.getContextPath() + "/css");
 	}
+
+    private boolean isEmpty(String param){
+        return param == null || param.trim().length() == 0;
+    }
+
+    private boolean isDouble(String num){
+        try{
+            Double.parseDouble(num.trim());
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
+    private boolean isPositive(String param){
+            double precio = Double.parseDouble(param.trim());
+            return precio > 0;
+    }
+
+    private boolean isInt(String param){
+        try{
+            Integer.parseInt(param.trim());
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
 }

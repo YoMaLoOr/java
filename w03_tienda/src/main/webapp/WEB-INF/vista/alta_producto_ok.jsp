@@ -39,20 +39,9 @@
             <h2>Alta de Productos</h2>
         </header>
         <div id="contPrincipal">
-            <form id="form_prod" action="${home}/alta_producto" method="post">
-                <input id="descripcion" type="text" name="descripcion" placeholder="descripcion">
-                <input id="precio" type="text" name="precio" placeholder="precio">
-                <select id="idFabricante" name="idFabricante">
-                    <option value="" hidden="hidden">Seleccione Fabricante</option>
-                    <c:forEach var="fabricante" items="${fabs}">
-                        <option value="${fabricante.idFabricante}">${fabricante.fabricante}</option>
-                    </c:forEach>
-                </select>
-                <button type="submit">Crear</button>
-            </form>
-            
-            <a href="${home}/menu_principal"><button>Volver</button></a>
-            <p id="error">&nbsp;</p>
+            <p>El producto <span>${producto}</span> se ha guardado con exito.</p>
+            <a href="${home}/alta_producto"><button>Mas productos</button></a>
+            <a href="${home}/menu_principal"><button>Menu Principal</button></a>
         </div>
     </body>
 </html>

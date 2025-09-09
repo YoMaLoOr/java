@@ -1,5 +1,6 @@
 package com.cursogetafe.tienda.negocio;
 
+import com.cursogetafe.tienda.modelo.Fabricante;
 import com.cursogetafe.tienda.modelo.Producto;
 
 import java.util.Set;
@@ -17,4 +18,23 @@ public interface Tienda {
      * @return un set de productos ordenados
      */
     Set<Producto> getProductos(String descripcion);
+
+    /**
+     * Devuelve todos los fabricantes ordenados alfabeticamente
+     * @return un set de fabricantes ordenados
+     */
+    Set<Fabricante> getFabricantes();
+
+    /**
+     * Recibe un objeto producto y lo guarda en la BBDD
+     * @param producto Nuevo producto validado
+     */
+    void crearProducto(Producto producto);
+
+    /**
+     *Devuelve el fabricante que coincida con el ID recibido
+     * @param idFabricante ID a validar
+     * @return un objeto fabricante que coincicde con el ID
+    */
+    Fabricante getFabricante (int idFabricante);
 }
