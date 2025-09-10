@@ -1,10 +1,12 @@
 package com.cursogetafe.tienda.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Set;
 
+@JsonIgnoreProperties("productos")
 @Entity
 @Table(name = "fabricantes")
 public class Fabricante implements Serializable {

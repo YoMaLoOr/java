@@ -36,5 +36,11 @@ public interface Tienda {
      * @param idFabricante ID a validar
      * @return un objeto fabricante que coincicde con el ID
     */
-    Fabricante getFabricante (int idFabricante);
+    Fabricante getFabricantes (int idFabricante);
+
+    /**
+     *Devuelve todos los fabricantes que proporcionan productos
+     * @return un set fabricante
+     */
+    Set<Fabricante> getFabricantesActivos ();
 }

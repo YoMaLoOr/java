@@ -37,6 +37,11 @@ public class TiendaImpl implements Tienda {
     }
 
     @Override
+    public void crearProducto(Producto producto) {
+        pDao.save(producto);
+    }
+
+    @Override
     public Set<Fabricante> getFabricantes() {
         Set<Fabricante> resul = new TreeSet<>(getComparatorFabricanteAlf());
         resul.addAll(fDao.findAll());
@@ -44,13 +49,15 @@ public class TiendaImpl implements Tienda {
     }
 
     @Override
-    public void crearProducto(Producto producto) {
-        pDao.save(producto);
+    public Fabricante getFabricantes(int idFabricante) {
+        return fDao.findById(idFabricante);
     }
 
     @Override
-    public Fabricante getFabricante(int idFabricante) {
-        return fDao.findById(idFabricante);
+    public Set<Fabricante> getFabricantesActivos() {
+        Set<Fabricante> resul = new TreeSet<>(getComparatorFabricanteAlf());
+        resul.addAll(fDao.findOnlyActive());
+        return resul;
     }
 
     private Comparator<Producto> getComparatorProductoDesc(){
