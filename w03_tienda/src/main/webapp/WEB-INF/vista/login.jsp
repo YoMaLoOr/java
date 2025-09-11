@@ -36,22 +36,14 @@
     </head>
     <body>
         <header class="cabecera">
-            <h2>Alta de Productos</h2>
+            <h2>Login</h2>
         </header>
         <div id="contPrincipal">
-            <form id="form_prod" action="${home}/alta_producto" method="post">
-                <input id="descripcion" type="text" name="descripcion" placeholder="descripcion">
-                <input id="precio" type="text" name="precio" placeholder="precio">
-                <select id="idFabricante" name="idFabricante">
-                    <option value="" hidden="hidden">Seleccione Fabricante</option>
-                    <c:forEach var="fabricante" items="${fabs}">
-                        <option value="${fabricante.idFabricante}">${fabricante.fabricante}</option>
-                    </c:forEach>
-                </select>
-                <button type="submit">Crear</button>
+            <form id="form_login" action="${home}/login" method="post">
+                <input id="usr" type="text" name="usr" placeholder="User">
+                <input id="pwd" type="text" name="psw" placeholder="Password">
+                <button type="submit">Login</button>
             </form>
-            
-            <a href="${home}/menu_principal"><button>Volver</button></a>
             <p id="error">&nbsp;</p>
         </div>
     </body>

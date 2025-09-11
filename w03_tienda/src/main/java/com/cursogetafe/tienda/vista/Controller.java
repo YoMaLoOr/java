@@ -8,6 +8,7 @@ import com.cursogetafe.tienda.modelo.Producto;
 import com.cursogetafe.tienda.negocio.Tienda;
 import com.cursogetafe.tienda.negocio.TiendaImpl;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -53,6 +54,11 @@ public class Controller extends HttpServlet {
             fabs = neg.getFabricantesActivos();
             req.setAttribute("fabs", fabs);
             req.getRequestDispatcher("/WEB-INF/vista/productos_fabricante.jsp").forward(req, resp);
+        }
+        case "/productos_fabricante_json" -> {
+            fabs = neg.getFabricantesActivos();
+            req.setAttribute("fabs", fabs);
+            req.getRequestDispatcher("/WEB-INF/vista/productos_fabricante_json.jsp").forward(req, resp);
         }
 		}
 	}
@@ -109,6 +115,18 @@ public class Controller extends HttpServlet {
                     && (fab = neg.getFabricantes(Integer.parseInt(idFabStr))) != null){
                     sesion.setAttribute("fab", fab);
                     resp.sendRedirect(home + "/productos_fabricante");
+                } else{
+                    System.out.println("ERROR");
+                }
+            }
+            case "/productos_fabricante_json_respuesta" ->{
+                idFabStr = req.getParameter("idFabricante");
+                if (!isEmpty(idFabStr)
+                        && isInt(idFabStr)
+                        && (fab = neg.getFabricantes(Integer.parseInt(idFabStr))) != null){
+                    ObjectMapper mapper = new ObjectMapper();
+                    String json = mapper.writeValueAsString(fab.getProductos());
+                    resp.getWriter().println(json);
                 } else{
                     System.out.println("ERROR");
                 }

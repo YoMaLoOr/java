@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursogetafe/tienda/json/TestJackson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursogetafe/tienda/json/TestJackson02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Fabricante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Fabricante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/negocio/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/negocio/Tienda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/negocio/TiendaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/negocio/TiendaImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/vista/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/vista/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto_error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto_error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/alta_producto_ok.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/listado_productos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/listado_productos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/menu_principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/menu_principal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/productos_fabricante.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/productos_fabricante.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +57,7 @@
   "keyToString": {
     "Application.Prueba.executor": "Run",
     "Application.TestJackson.executor": "Run",
+    "Application.TestJackson02.executor": "Run",
     "Application.TestMapeo.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.TestFabricanteDao.executor": "Run",
