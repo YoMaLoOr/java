@@ -10,6 +10,7 @@
 
         <class>com.cursogetafe.tienda.modelo.Fabricante</class>
         <class>com.cursogetafe.tienda.modelo.Producto</class>
+        <class>com.cursogetafe.tienda.modelo.Usuario</class>
 
         <properties>
             <!-- JDBC -->
@@ -20,7 +21,7 @@
 
             <!-- Hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
         </properties>
     </persistence-unit>

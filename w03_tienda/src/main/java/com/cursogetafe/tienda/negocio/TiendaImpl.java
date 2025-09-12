@@ -2,10 +2,8 @@ package com.cursogetafe.tienda.negocio;
 
 import com.cursogetafe.tienda.modelo.Fabricante;
 import com.cursogetafe.tienda.modelo.Producto;
-import com.cursogetafe.tienda.persistencia.FabricanteDAOImpl;
-import com.cursogetafe.tienda.persistencia.FabricanteDao;
-import com.cursogetafe.tienda.persistencia.ProductoDAOImpl;
-import com.cursogetafe.tienda.persistencia.ProductoDao;
+import com.cursogetafe.tienda.modelo.Usuario;
+import com.cursogetafe.tienda.persistencia.*;
 
 import java.text.Collator;
 import java.util.Comparator;
@@ -17,10 +15,13 @@ public class TiendaImpl implements Tienda {
 
     private ProductoDao pDao;
     private FabricanteDao fDao;
+    private UsuarioDao uDao;
 
     public TiendaImpl(){
         pDao = new ProductoDAOImpl();
-        fDao = new FabricanteDAOImpl();
+        fDao = new FabricanteDaoImpl();
+        uDao = new UsuarioDaoImpl();
+
     }
     @Override
     public Set<Producto> getProductos() {
@@ -60,6 +61,16 @@ public class TiendaImpl implements Tienda {
         return resul;
     }
 
+    @Override
+    public boolean crearUsuario(Usuario u) {
+        return uDao.save(u);
+    }
+
+    @Override
+    public Usuario validaUsuario(String usr, String psw) {
+        return uDao.valida(usr, psw);
+    }
+
     private Comparator<Producto> getComparatorProductoDesc(){
         return new Comparator<>() {
             @Override
@@ -86,4 +97,5 @@ public class TiendaImpl implements Tienda {
             return col.compare(o1.getProducto(), o2.getProducto());
         };
     }*/
+
 }

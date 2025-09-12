@@ -9,13 +9,13 @@ import jakarta.persistence.TypedQuery;
 import java.util.HashSet;
 import java.util.Set;
 
-public class FabricanteDAOImpl implements FabricanteDao{
+public class FabricanteDaoImpl implements FabricanteDao{
 
     private EntityManagerFactory emf;
     private String jpql;
 
-    public FabricanteDAOImpl(EntityManagerFactory emf) {this.emf = emf;}
-    public FabricanteDAOImpl() {emf = Config.getEmf();}
+    public FabricanteDaoImpl(EntityManagerFactory emf) {this.emf = emf;}
+    public FabricanteDaoImpl() {emf = Config.getEmf();}
 
     @Override
     public void save(Fabricante fabricante) {

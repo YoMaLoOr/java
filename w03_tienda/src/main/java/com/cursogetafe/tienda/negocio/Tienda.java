@@ -2,6 +2,7 @@ package com.cursogetafe.tienda.negocio;
 
 import com.cursogetafe.tienda.modelo.Fabricante;
 import com.cursogetafe.tienda.modelo.Producto;
+import com.cursogetafe.tienda.modelo.Usuario;
 
 import java.util.Set;
 
@@ -43,4 +44,21 @@ public interface Tienda {
      * @return un set fabricante
      */
     Set<Fabricante> getFabricantesActivos ();
+
+    /**
+     * Agrega nuevo Usuario
+     * @param u usuario a agregar
+     * @return
+     */
+
+    boolean crearUsuario(Usuario u);
+
+    /**
+     * Valida las credenciales de un login
+     * @param usr nombre de usuario
+     * @param psw contraseña
+     * @return el usuario si se ha validado correctamente o si es null si no lo son
+     */
+
+    Usuario validaUsuario(String usr, String psw);
 }

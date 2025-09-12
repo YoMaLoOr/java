@@ -22,7 +22,7 @@ class TestFabricanteDao {
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		fDao = new FabricanteDAOImpl();
+		fDao = new FabricanteDaoImpl();
 	}
 
 	@Test
