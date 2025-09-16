@@ -18,7 +18,7 @@
             let error = document.getElementById("error");
             if (!usr ||  !psw) {
                 error.textContent = "Todos los campos son obligatorios";
-            }else if (checkPsw(psw)) {
+            }else if (!checkPsw(psw)) {
                 error.textContent = "La contraseña debe tener al menos 6 carateres.";
             }else {
                 error.textContent = "";
@@ -42,10 +42,13 @@
         <div id="contPrincipal">
             <form id="form_login" action="${home}/login" method="post">
                 <input id="usr" type="text" name="usr" placeholder="User">
-                <input id="pwd" type="text" name="psw" placeholder="Password">
+                <input id="psw" type="password" name="psw" placeholder="Password">
                 <button type="submit">Login</button>
             </form>
-            <p id="error">&nbsp;</p>
+            <p id="error">&nbsp;
+                <c:if test="${error eq 'credenciales'}">Credenciales incorrectas.</c:if>
+                <c:if test="${error eq 'disable'}">El usuario está bloqueado.</c:if>
+            </p>
         </div>
     </body>
 </html>

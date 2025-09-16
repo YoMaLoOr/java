@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5961701-a0e3-4391-9035-55fd7908e922" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/business/Negocio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/business/NegocioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/persistence/ClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImplNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/E02applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/a01_ctx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/a02_ctx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/a03_ctx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/a04_ctx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursogetafe/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/modelo/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/persistencia/UsuarioDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/persistencia/UsuarioDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/vista/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/java/com/cursogetafe/tienda/vista/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../w03_tienda/src/main/webapp/WEB-INF/vista/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../w03_tienda/src/main/webapp/WEB-INF/vista/login.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="32mFYt3Pqr6fsW17EE3ivxTq36p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test01.executor": "Run",
+    "Application.Test02.executor": "Run",
+    "Application.Test03.executor": "Run",
+    "Application.Test04.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mananas/Documents/GitHub/java/s01_dixml/src/main/resources",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml\src\main\resources" />
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml\src\main\java\com\cursogetafe\dixml\negocio" />
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml\src\main\java\com\cursogetafe\dixml" />
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cursogetafe.dixml" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5961701-a0e3-4391-9035-55fd7908e922" name="Changes" comment="" />
+      <created>1758017894183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758017894183</updated>
+    </task>
+    <servers />
+  </component>
+</project>

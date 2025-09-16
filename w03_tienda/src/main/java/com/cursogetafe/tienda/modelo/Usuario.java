@@ -19,7 +19,7 @@ public class Usuario implements Serializable {
     @Column(name = "username")
     private String usuario;
     private String password;
-    private boolean enable;
+    private boolean enable = true;
 
 
     public Usuario(String nombre, String email, String password, String usuario) {
