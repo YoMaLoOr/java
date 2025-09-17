@@ -7,9 +7,8 @@
 		 http://www.springframework.org/schema/context
 		 http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="test" class="com.cursogetafe.dixml.Test04b">
-        <constructor-arg ref="dataSourceDesarrollo"/>
-    </bean>
+    <context:annotation-config/>
+    <context:component-scan base-package="com.cursogetafe.dixml"/>
 
     <bean id="dataSourceProduccion" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="url" value="${bbdd.url}"/>

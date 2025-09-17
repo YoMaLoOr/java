@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5961701-a0e3-4391-9035-55fd7908e922" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test04b.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/Test05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/a05_ctx.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test04b.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a05_ctx.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/misc.xml" beforeDir="false" />
@@ -17,9 +17,9 @@
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImplNew.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/test/java/com/cursogetafe/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/a04_ctx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/a04_ctx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s01_dixml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a04_ctx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a04_ctx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s01_dixml/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/app.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mananas/Documents/GitHub/java/s01_dixml/src/main/resources",
+    "last_opened_file_path": "C:/Users/Mananas/Documents/GitHub/java/s02_dianotaciones",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
@@ -84,13 +84,13 @@
   <component name="RunManager">
     <configuration name="Test05" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
-        <env name="spring.profiles.active" value="desarrollo" />
+        <env name="spring.profiles.active" value="produccion" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="com.cursogetafe.dixml.Test05" />
+      <option name="MAIN_CLASS_NAME" value="com.cursogetafe.dixml.test5.Test05" />
       <module name="s01_dixml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cursogetafe.dixml.*" />
+          <option name="PATTERN" value="com.cursogetafe.dixml.test5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
