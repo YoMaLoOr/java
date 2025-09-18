@@ -5,24 +5,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5961701-a0e3-4391-9035-55fd7908e922" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test04b.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a05_ctx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A01Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A02Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A04Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/main/java/com/cursogetafe/dixml/persistence/ClienteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImplNew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml copy/src/test/java/com/cursogetafe/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a04_ctx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a04_ctx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../s01_dixml/src/main/resources/app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/images/cancel-remove-icone-5993-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/images/icono.ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/inicio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/modelo/Contacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/modelo/Domicilio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/negocio/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/negocio/AgendaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/persistencia/ContactoDAOJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/persistencia/ContactoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/persistencia/ContactoDaoJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/persistencia/ContactoDaoMem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/persistencia/ContactoDaoMemSerial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/tests/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/tests/Test02Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/util/Contactos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/BuscarContacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/BuscarContactoCadena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/ConsultarTodos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/MenuPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/NuevoContacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/swing/VInicial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/swing/VentanaEdicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/java/com/cursogetafe/agenda/vista/swing/VentanaOpciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/main/resources/app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/site/site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/test/java/com/cursogetafe/agenda/persistencia/ContactoDAOJPATest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/config/BeanFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/config/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/images/cancel-remove-icone-5993-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/images/icono.ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/inicio/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/modelo/Contacto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/modelo/Domicilio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/negocio/Agenda.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/negocio/AgendaImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/persistencia/ContactoDAOJPA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/persistencia/ContactoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/persistencia/ContactoDaoJDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/persistencia/ContactoDaoMem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/persistencia/ContactoDaoMemSerial.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/tests/Test01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/tests/Test02Dao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/util/Contactos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/util/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/BuscarContacto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/BuscarContactoCadena.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/ConsultarTodos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/MenuPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/NuevoContacto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/swing/VInicial.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/swing/VentanaEdicion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/classes/com/cursogetafe/agenda/vista/swing/VentanaOpciones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/surefire-reports/TEST-com.cursogetafe.agenda.persistencia.ContactoDAOJPATest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/surefire-reports/com.cursogetafe.agenda.persistencia.ContactoDAOJPATest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/test-classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../j16_agendav3/target/test-classes/com/cursogetafe/agenda/persistencia/ContactoDAOJPATest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A05Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A05DesarrolloConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/config/A05ProduccionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/test5/Test05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/dixml/test5/Test05.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +115,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Test01.executor": "Run",
-    "Application.Test02.executor": "Run",
-    "Application.Test03.executor": "Run",
-    "Application.Test04.executor": "Run",
-    "Application.Test04b.executor": "Run",
-    "Application.Test05.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mananas/Documents/GitHub/java/s03_dijavaconfig",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Test01.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test02.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test03.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test04.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test04b.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test05.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mananas/Documents/GitHub/java/s03_dijavaconfig&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mananas\Documents\GitHub\java\s01_dixml\src\main\resources" />
@@ -87,11 +152,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Test05" type="Application" factoryName="Application" nameIsGenerated="true">
-      <envs>
-        <env name="spring.profiles.active" value="produccion" />
-      </envs>
       <option name="MAIN_CLASS_NAME" value="com.cursogetafe.dixml.test5.Test05" />
-      <module name="s01_dixml" />
+      <module name="s02_dianotaciones" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cursogetafe.dixml.test5.*" />
