@@ -21,7 +21,8 @@ public class Campo2 implements Serializable {
     private String campo;
     private String direccion;
     @OneToMany(mappedBy="campo") //Hace referencia al atributo de clase, no a la columna de la tabla
-    //@Basic(fetch=FetchType.EAGER) Por defecto una coleccion es LAZY. Excepto string, que es un element collection, no un one to many
+    //@Basic(fetch=FetchType.EAGER) Por defecto una coleccion es LAZY. Excepto las colecciones de datos simples, que es un
+    // element collection, no un one to many, pero sigue siendo Lazy por defecto al ser una coleccion. 
     private Set<Partido2> partidos;
     
 

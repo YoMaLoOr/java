@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.mvn/jvm.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/.mvn/maven.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/negocio/Negocio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/negocio/NegocioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/persistence/ClienteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/java/com/cursogetafe/dixml/persistence/ClienteDaoImplNew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/E02applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a01_ctx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/main/resources/a02_ctx.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/site/site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../s01_dixml/src/test/java/com/cursogetafe/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/modelo/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/UsuarioDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/persistencia/UsuarioDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/vista/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cursogetafe/tienda/vista/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vista/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j13_jpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j13_jpa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
