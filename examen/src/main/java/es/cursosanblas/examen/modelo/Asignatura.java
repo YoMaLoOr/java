@@ -18,10 +18,7 @@ public class Asignatura implements Comparable<Asignatura>{
     @ManyToOne
     @JoinColumn(name="fk_profesor")
     private Profesor profesor;
-    @ManyToMany
-    @JoinTable(name="matriculados",
-            joinColumns=@JoinColumn(name="fk_asignatura"),
-            inverseJoinColumns=@JoinColumn(name="fk_alumno"))
+    @ManyToMany(mappedBy="asignaturas")
     private Set<Alumno> alumnos;
 
     public Asignatura() {
@@ -106,7 +103,6 @@ public class Asignatura implements Comparable<Asignatura>{
                 ", creditos=" + creditos +
                 ", facultad='" + facultad + '\'' +
                 ", profesor=" + profesor +
-                ", alumnos=" + alumnos +
                 '}';
     }
 }

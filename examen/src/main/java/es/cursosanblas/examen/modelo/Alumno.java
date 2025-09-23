@@ -12,7 +12,10 @@ public class Alumno extends Persona{
     private String matricula;
     @Column(name = "anyo_inscripcion")
     private int anyoInscripcion;
-    @ManyToMany(mappedBy="alumnos")
+    @ManyToMany
+    @JoinTable(name="matriculados",
+            joinColumns=@JoinColumn(name="fk_asignatura"),
+            inverseJoinColumns=@JoinColumn(name="fk_alumno"))
     private Set<Asignatura> asignaturas;
 
     public Alumno() {
@@ -53,7 +56,8 @@ public class Alumno extends Persona{
         return "Alumno{" +
                 "idPersona=" + getIdPersona() + '\'' +
                 ", matricula='" + matricula + '\'' +
-                ", anyoInscripcion=" + anyoInscripcion +
+                ", anyoInscripcion=" + anyoInscripcion + '\'' +
+                "Asignatura=" + asignaturas +
                 '}';
     }
 }
