@@ -20,7 +20,6 @@ public class AsignaturaDaoImpl implements AsignaturaDao{
 
     @Override
     public boolean insertar(Asignatura asignatura) {
-        boolean funciona = false;
         em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
@@ -38,7 +37,6 @@ public class AsignaturaDaoImpl implements AsignaturaDao{
 
     @Override
     public boolean actualizar(Asignatura asignatura) {
-        boolean funciona = false;
         em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
@@ -82,7 +80,7 @@ public class AsignaturaDaoImpl implements AsignaturaDao{
     @Override
     public Asignatura buscar(int idAsignatura) {
         em = emf.createEntityManager();
-        jpql = "select a from Asignatura a left join fetch a.alumnos  where a.idAsignatura = ?1";
+        jpql = "select a from Asignatura a where a.idAsignatura = ?1";
         TypedQuery<Asignatura> q = em.createQuery(jpql, Asignatura.class);
         q.setParameter(1, idAsignatura);
         Asignatura a = q.getSingleResultOrNull();
@@ -93,7 +91,7 @@ public class AsignaturaDaoImpl implements AsignaturaDao{
     @Override
     public Set<Asignatura> buscarPorProfesor(Profesor profesor) {
         em = emf.createEntityManager();
-        jpql = "select a from Asignatura a left join fetch a.alumnos where a.profesor.idPersona = ?1";
+        jpql = "select a from Asignatura a where a.profesor.idPersona = ?1";
         TypedQuery<Asignatura> q = em.createQuery(jpql, Asignatura.class);
         q.setParameter(1, profesor.getIdPersona());
         Set<Asignatura> resul = new HashSet<>(q.getResultList());
@@ -116,7 +114,7 @@ public class AsignaturaDaoImpl implements AsignaturaDao{
     @Override
     public Set<Asignatura> buscarSinProfesor() {
         em = emf.createEntityManager();
-        jpql = "select a from Asignatura a left join fetch a.alumnos";
+        jpql = "select a from Asignatura a where a.profesor is null";
         TypedQuery<Asignatura> q = em.createQuery(jpql, Asignatura.class);
         Set<Asignatura> resul = new HashSet<>(q.getResultList());
         em.close();

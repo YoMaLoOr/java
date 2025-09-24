@@ -57,7 +57,6 @@ public class Alumno extends Persona{
                 "idPersona=" + getIdPersona() + '\'' +
                 ", matricula='" + matricula + '\'' +
                 ", anyoInscripcion=" + anyoInscripcion + '\'' +
-                "Asignatura=" + asignaturas +
                 '}';
     }
 }

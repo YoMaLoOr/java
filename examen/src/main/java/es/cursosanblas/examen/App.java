@@ -24,15 +24,15 @@ public class App {
 //        asig = asigDao.buscar(19);
 //        asigDao.eliminar(asig);
 //
-//        String jpql = "select p from Profesor p where p.idPersona = :id";
-//        TypedQuery<Profesor> q = em.createQuery(jpql, Profesor.class);
-//        q.setParameter("id", "8");
-//        Profesor p = q.getSingleResultOrNull();
-//        asigDao.buscarPorProfesor(p).forEach(System.out::println);
-//        System.out.println("______________________________________________________________");
-//        asigDao.buscarSinProfesor().forEach(System.out::println);
-//        System.out.println("______________________________________________________________");
-//        asigDao.buscarTodas().forEach((id, asign) -> System.out.println(id + " : " + asign));
+        String jpql = "select p from Profesor p where p.idPersona = :id";
+        TypedQuery<Profesor> q = em.createQuery(jpql, Profesor.class);
+        q.setParameter("id", "8");
+        Profesor p = q.getSingleResultOrNull();
+        asigDao.buscarPorProfesor(p).forEach(System.out::println);
+        System.out.println("______________________________________________________________");
+        asigDao.buscarSinProfesor().forEach(System.out::println);
+        System.out.println("______________________________________________________________");
+//        asigDao.buscarTodas().forEach((id, asign) -> System.out.println(id + " : " + asign) );
 //        asig = new Asignatura("Prueba2", 150, "PruebaPrueba");
 //        asig.setIdAsignatura(18);
 //        asigDao.actualizar(asig);
