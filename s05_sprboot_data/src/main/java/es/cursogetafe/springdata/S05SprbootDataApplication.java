@@ -1,4 +1,4 @@
-package com.cursogetafe.springdata;
+package es.cursogetafe.springdata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

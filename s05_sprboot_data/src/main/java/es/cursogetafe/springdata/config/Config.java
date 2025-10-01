@@ -1,9 +1,9 @@
-package com.cursogetafe.springdata.config;
+package es.cursogetafe.springdata.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
-@EnableJpaRepositories("com.cursogetafe.springdata.persistencia")
+@EnableJpaRepositories("es.cursogetafe.springdata.persistencia")
 public class Config {
 }

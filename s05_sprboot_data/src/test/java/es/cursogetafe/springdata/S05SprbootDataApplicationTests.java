@@ -1,4 +1,4 @@
-package com.cursogetafe.springdata;
+package es.cursogetafe.springdata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

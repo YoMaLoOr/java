@@ -1,4 +1,4 @@
-package com.cursogetafe.springdata.modelo;
+package es.cursogetafe.springdata.modelo;
 
 import jakarta.persistence.*;
 
