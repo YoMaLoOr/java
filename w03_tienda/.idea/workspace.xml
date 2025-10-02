@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dfbb3f1-1b20-4d04-bfd8-a1aff4ffca6a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../j13_jpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j13_jpa/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../j14_ejerciciojpa/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../s06_sprboot_web/src/main/java/es/cursogetafe/web/AlumnoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s05_sprboot_data/src/main/java/es/cursogetafe/springdata/negocio/Universidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../s05_sprboot_data/src/main/java/es/cursogetafe/springdata/negocio/Universidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,7 +1,10 @@
 package es.cursogetafe.springdata.negocio;
 
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
+import es.cursogetafe.springdata.modelo.Alumno;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +33,9 @@ public class Universidad {
 		this.profeDao = profeDao;
 	}
 
+    public Set<Alumno> getAlumnos(){
+        return new HashSet<>(aluDao.findAll());
+    }
 	
 	@PostConstruct
 	public void init() {
